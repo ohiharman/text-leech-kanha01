@@ -22,39 +22,40 @@ from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
-bot = Client("bot",
-             bot_token= "",
-             api_id= ,
-             api_hash= "",)
+bot = Client(
+    "bot",
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN)
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-       f"𝐇𝐞𝐥𝐥𝐨 ❤️\n\n ▂▃▅▇█▓▒░ ❤️ 𝐈𝐏𝐒 𝐋𝐎𝐕𝐄𝐑'𝐒🌈™ ❤️ ░▒▓█▇▅▃▂ \n\n❈ I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me ⟰ /txt Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
+       f"𝐇𝐞𝐥𝐥𝐨 ❤️\n\n ▂▃▅▇█▓▒░ ❤️  SONIC KUWAL SSC BOT 🌈™ ❤️ ░▒▓█▇▅▃▂ \n\n❈ I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically\n\n If You Want To Use Me First Send Me ⟰ \n /txt Command And Then Follow Few Steps..\n\n I working link ALL APP TXT WORKING NOT WORKING YOUTUBE LINK. \n\n YOUTUBE LINK WORKING SOON POSSIBLE....\n\n more apps add SOON update contact me :- <a href='https://telegram.me/SONICKUWALSSCBOT'>❖ ꧁༺ ❤️ 𝓚𝓐𝓝𝓗𝓐𝓘𝓨𝓐 𝓛𝓐𝓛 𝓜𝓔𝓔𝓝𝓐 𝓚𝓤𝓦𝓐𝓛 💕 ༻꧂ ❖ ™</a>", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/Sonickuwalupdate") ],
+                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/SONICKUWALUPDATEKANHA") ],
                     [
-                    InlineKeyboardButton("✜◆ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 ◆✜" ,url="https://t.me/KanhaContentbot") ],
+                    InlineKeyboardButton("✜◆ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 ◆✜" ,url="https://t.me/SONICKUWALSSCBOT") ],
                     [
-                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/KanhaContentbot") ]                               
+                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/SONICKUWALSSCBOT") ]                               
             ]))
 
 
-@bot.on_message(filters.command("stop")&(filters.chat(auth_users)))
+@bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
     await m.reply_text("♦ 𝐒𝐭𝐨𝐩𝐩𝐞𝐭 ♦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
-@bot.on_message(filters.command(["txt"])&(filters.chat(auth_users)))
+@bot.on_message(filters.command(["txt"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐀 𝐓𝐱𝐭 𝐅𝐢𝐥𝐞 𝐒𝐞𝐧𝐝 𝐇𝐞𝐫𝐞 ⏍')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
-    await bot.send_document(-1002475109480, x)
+    await bot.send_document(-1002461666553, x)
     await input.delete(True)
 
     path = f"./downloads/{m.chat.id}"
@@ -171,8 +172,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[ 🎥 ] Vid_ID: 💖 @KanhaContentbot ❤️ ** {str(count).zfill(3)}. **{𝗻𝗮𝗺𝗲𝟭} ({res}) {MR} .mp4\n\n✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ 🅘🅟🅢 🅛🅞🅥🅔🅡 @KanhaContentbot **'
-                cc1 = f'**[ 📁 ] Pdf_ID: 💖 @KanhaContentbot ❤️ ** {str(count).zfill(3)}. **{𝗻𝗮𝗺𝗲𝟭}{MR} .pdf \n\n✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ 🅘🅟🅢 🅛🅞🅥🅔🅡 @KanhaContentbot **'
+                cc = f'**[ 🎥 ] Vid_ID: 💖 @SONICKUWALSSCBOT ❤️ ** {str(count).zfill(3)}. **{𝗻𝗮𝗺𝗲𝟭} ({res}) {MR} .mp4\n\n✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**\n\n🔗 𝐔𝐑𝐋 »**{url}**\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ 🅘🅟🅢 🅛🅞🅥🅔🅡 @SONICKUWALSSCBOT **'
+                cc1 = f'**[ 📁 ] Pdf_ID: 💖 @SONICKUWALSSCBOT ❤️ ** {str(count).zfill(3)}. **{𝗻𝗮𝗺𝗲𝟭}{MR} .pdf \n\n✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}****\n\n🔗 𝐔𝐑𝐋 »**{url}**\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ 🅘🅟🅢 🅛🅞🅥🅔🅡 @SONICKUWALSSCBOT **'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -187,18 +188,18 @@ async def account_login(bot: Client, m: Message):
                 
                 elif ".pdf" in url:
                     try:
-                        cmd = f'yt-dlp -o "@KanhaContentbot {name}.pdf" "{url}"'
+                        cmd = f'yt-dlp -o "@SONICKUWALSSCBOT {name}.pdf" "{url}"'
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
-                        copy = await bot.send_document(chat_id=m.chat.id, document=f'@KanhaContentbot {name}.pdf', caption=cc1)
+                        copy = await bot.send_document(chat_id=m.chat.id, document=f'@SONICKUWALSSCBOT {name}.pdf', caption=cc1)
                         count += 1
-                        os.remove(f'@KanhaContentbot {name}.pdf')
+                        os.remove(f'@SONICKUWALSSCBOT {name}.pdf')
                     except FloodWait as e:
                         await m.reply_text(str(e))
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"❊⟱𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ⟱❊ »\n\n📝 𝐍𝐚𝐦𝐞 » `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `😉`\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ ▂▃▅▇█▓▒░❤️ 𝐈𝐏𝐒 𝐋𝐎𝐕𝐄𝐑'𝐒🌈™ ❤️░▒▓█▇▅▃▂ @KanhaContentbot **"
+                    Show = f"❊⟱𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ⟱❊ »\n\n📝 𝐍𝐚𝐦𝐞 » `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ ▂▃▅▇█▓▒░❤️ 𝐈𝐏𝐒 𝐋𝐎𝐕𝐄𝐑'𝐒🌈™ ❤️░▒▓█▇▅▃▂ @SONICKUWALSSCBOT **"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
