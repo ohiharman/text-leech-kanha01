@@ -3,6 +3,12 @@
 ## FOLLOW TELEGRAM
 https://t.me/Sonickuwalupdate
 
+## Deploy To Google Colab
+
+<a href="https://colab.research.google.com/github/Soninkuwal/text-leech-kanha01/blob/main/text-leech-kanha01.ipynb" target="_blank">
+  <img src="https://ashutoshgoswami24.github.io/Me/img/gc.png" alt="Deploy To Google Colab" style="width:150px;"/>
+</a>
+
 ## Deploy
 You can deploy this bot anywhere.
 
